@@ -1,6 +1,9 @@
 {
   "dependencies": {
-    "express": "^5.2.1"
+    "express": "^5.2.1",
+    "inquirer": "^13.4.3",
+    "qr-image": "^3.2.0",
+    "superheroes": "^4.0.0"
   },
   "name": "sample",
   "version": "1.0.0",
@@ -12,5 +15,5 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "type": "commonjs"
+  "type": "module"
 }
