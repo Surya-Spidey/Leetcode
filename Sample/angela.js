@@ -15,6 +15,11 @@ inquirer
         const url = answers.text
         var qr_svg = qr.image(url);
         qr_svg.pipe(fs.createWriteStream('url.jpg'));
+        fs.writeFile('sample.txt', url, (err) => {
+            if (err) {
+                console.error('Error writing to file:', err);
+            }
+        })
     })
     .catch((error) => {
         console.error('Error:', error);
