@@ -31,3 +31,7 @@ app.delete("/datum/:id",(req,res) => {
     console.log(req.params.id);
     res.send('My Name is Paul Muadib Atredies');
 })
+
+app.patch("/DEV",(req,res) => {
+    res.send('This is a patch request');
+})
