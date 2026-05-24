@@ -4,7 +4,7 @@ let original = x;   // store original
 let num = 0;
 
 while (x > 0) {
-    let lastDigit = x % 10;
+    let lastDigit = x % 10;  // get last digit
     num = num * 10 + lastDigit;
     x = Math.floor(x / 10);
 }
