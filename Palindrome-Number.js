@@ -6,7 +6,7 @@ let num = 0;
 while (x > 0) {
     let lastDigit = x % 10;  // get last digit
     num = num * 10 + lastDigit; // build reversed number
-    x = Math.floor(x / 10);
+    x = Math.floor(x / 10); // remove last digit
 }
 
 let result = num === original;
