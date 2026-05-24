@@ -1,4 +1,4 @@
-let x = 16561;
+let x = 16561; // input
 
 let original = x;   // store original
 let num = 0;
