@@ -1,0 +1,16 @@
+let x = 16561;
+
+let original = x;   // store original
+let num = 0;
+
+while (x > 0) {
+    let lastDigit = x % 10;
+    num = num * 10 + lastDigit;
+    x = Math.floor(x / 10);
+}
+
+let result = num === original;
+
+console.log(result);
+
+if (original < 0) console.log(false);
