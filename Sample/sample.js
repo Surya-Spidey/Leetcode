@@ -34,4 +34,4 @@ app.delete("/datum/:id",(req,res) => {
 
 app.patch("/DEV",(req,res) => {
     res.send('This is a patch request');
-})
+});
