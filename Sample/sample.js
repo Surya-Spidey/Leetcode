@@ -1,8 +1,8 @@
-async function sample(){
-    const response = await fetch('https://localhost:5500/data');
-    const data = await response.json();
-    console.log(data);
-}
+// async function sample(){
+//     const response = await fetch('https://localhost:5500/data');
+//     const data = await response.json();
+//     console.log(data);
+// }
 
 
 import express from 'express';
@@ -19,6 +19,7 @@ app.listen(port,() => {
 app.post("/datum",(req,res) => {
     console.log(req.body);
     res.send('Data received');
+    res.sendStatus(201);
 })
 
 app.put("/datum/:id",(req,res) => {
@@ -32,6 +33,6 @@ app.delete("/datum/:id",(req,res) => {
     res.send('My Name is Paul Muadib Atredies');
 })
 
-app.patch("/DEV",(req,res) => {
+app.patch("/datum/:id",(req,res) => {
     res.send('This is a patch request');
 });
