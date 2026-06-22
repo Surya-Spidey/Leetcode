@@ -38,3 +38,7 @@ app.delete("/datum/:id",(req,res) => {
 app.patch("/datum/:id",(req,res) => {
     res.send('This is a patch request');
 });
+
+app.get("/about", (req,res) => {
+    res.json({ "name": "Surya", "goal": "web dev"})
+})
