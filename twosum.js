@@ -11,7 +11,6 @@ var twoSum = function(nums, target) {
                 result.push([index, i]);
             }
         }
-
         if (!map.has(nums[i])) {
             map.set(nums[i], []);
         }
