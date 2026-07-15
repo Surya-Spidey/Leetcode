@@ -48,7 +48,7 @@ app.listen(port,() => {
     console.log(`Server is running on port ${port}`);
 });
 
-const today = new Date()
+const today = new Date("July 17, 2026 ");
 const day = today.getDay();
 
 console.log(day)
@@ -63,7 +63,7 @@ if(day == 0 || day == 6){
 
 console.log(showDay, showAdv)
 app.get("/", (req,res) => {
-    res.render("/index.ejs", {
+    res.render("index.ejs", {
     day : showDay,
     adv : showAdv
 })
